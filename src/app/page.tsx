@@ -2,23 +2,34 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Button, ButtonMode, ButtonModeColorEnum } from "@/components/Button";
+import {
+	Alert,
+	AlertIcon,
+	AlertTitle,
+	AlertDescription,
+} from "@chakra-ui/react";
 
 export default function Home() {
 	return (
 		<main className={styles.main}>
 			<div className={styles.description}>
 				<p>
-          Get started by editing&nbsp;
+          			Get started by editing&nbsp;
 					<code className={styles.code}>src/app/page.tsx</code>
 				</p>
 				<div>
+					<Alert status="success">
+						<AlertIcon />
+						<AlertTitle>Your browser is updated!</AlertTitle>
+						<AlertDescription>Your Chakra experience may be awesome.</AlertDescription>
+					</Alert>
 					<Button mode={ButtonMode.WARNING}>Button</Button>
 					<a
 						href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-            By{" "}
+            			By{" "}
 						<Image
 							src="/vercel.svg"
 							alt="Vercel Logo"
