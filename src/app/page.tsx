@@ -8,6 +8,7 @@ import {
 	AlertTitle,
 	AlertDescription,
 } from "@chakra-ui/react";
+import { StyledChakraButton } from "@/components/StyledChakraButton";
 
 export default function Home() {
 	return (
@@ -23,7 +24,8 @@ export default function Home() {
 						<AlertTitle>Your browser is updated!</AlertTitle>
 						<AlertDescription>Your Chakra experience may be awesome.</AlertDescription>
 					</Alert>
-					<Button mode={ButtonMode.WARNING}>Button</Button>
+					<StyledChakraButton variant="ghost">StyledChakraButton</StyledChakraButton>
+					<Button mode={ButtonMode.WARNING}>Styled Components Button</Button>
 					<a
 						href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
 						target="_blank"
